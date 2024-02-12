@@ -2,6 +2,8 @@ import { QueryClientProvider, QueryClient } from "react-query";
 import Welcome from "./components/welcome";
 import Header from "./components/header";
 import Filter from "./components/filter";
+import Labels from "./components/labels";
+import Locations from "./components/locations";
 
 export const queryClient = new QueryClient();
 
@@ -12,7 +14,9 @@ function App() {
       <Header/>
       <Welcome/>
       <Filter/>
-
+      <Labels/>
+      <Locations/>
+      
     </QueryClientProvider>
   )
 }
